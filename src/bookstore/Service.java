@@ -7,6 +7,8 @@ public class Service {
 	
 	static private Map<Integer, Book> books = new HashMap<>();
 	
+	public Service() {}
+	
 	public void addBook() {
 		Book book = new Book();
 		Service.books.put(book.getID(), book);
