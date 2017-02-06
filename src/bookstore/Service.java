@@ -28,7 +28,17 @@ public class Service {
 		Service.books.remove(id);
 	}
 	
-	public static String seeBooks() {
+	public void updateTitle(int id, String title) {
+		Book book = Service.books.get(id);
+		book.setTitle(title);
+	}
+	
+	public void updateAuthor(int id, String author) {
+		Book book = Service.books.get(id);
+		book.setAuthor(author);
+	}
+	
+	public static String printBooks() {
 		return Service.books.toString();
 	}
 
